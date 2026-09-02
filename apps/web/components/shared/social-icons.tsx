@@ -45,6 +45,19 @@ function XIcon({ className }: { className?: string }) {
   );
 }
 
+function YoutubeIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8ZM9.6 15.8V8.2L16 12l-6.4 3.8Z" />
+    </svg>
+  );
+}
+
 const socialLinks = [
   {
     key: "linkedin",
@@ -63,6 +76,12 @@ const socialLinks = [
     label: "X",
     href: siteConfig.social.x,
     Icon: XIcon,
+  },
+  {
+    key: "youtube",
+    label: "YouTube",
+    href: siteConfig.social.youtube,
+    Icon: YoutubeIcon,
   },
 ] as const;
 
