@@ -19,7 +19,7 @@ export function Community() {
         <div className="grid gap-8 lg:grid-cols-[0.32fr_minmax(0,0.68fr)] lg:gap-14">
           <div>
             <span className="type-caption text-[9px] text-[#22B8F0]">
-              08 / COMMUNITY
+              09 / COMMUNITY
             </span>
           </div>
 
