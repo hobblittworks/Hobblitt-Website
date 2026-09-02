@@ -92,19 +92,46 @@ export const pricingFaqs: PricingFaq[] = [
     answer:
       "Not really. We price around the problem, scope, and outcome rather than forcing every project into the same package.",
   },
+
   {
     question: "HOW DO YOU ESTIMATE A PROJECT?",
     answer:
-      "We first understand what you are trying to achieve, what is currently getting in the way, and what needs to change. From there, we define the right scope.",
+      "We first understand what you are trying to achieve, what is getting in the way, and what needs to change. From there, we define the right scope and engagement.",
   },
+
+  {
+    question: "WHAT IF WE DON'T KNOW WHAT WE NEED YET?",
+    answer:
+      "That's completely fine. Start with the problem. We help understand what is actually needed before deciding what to build.",
+  },
+
+  {
+    question: "DO YOU ONLY BUILD PRODUCTS AND WEBSITES?",
+    answer:
+      "No. Depending on the problem, the right answer might be a product, an internal tool, an integration, an automated workflow, or a broader digital experience.",
+  },
+
   {
     question: "CAN WE START SMALL?",
     answer:
-      "Yes. A project can begin with discovery, a focused build, or a specific problem. The engagement can grow when the work calls for it.",
+      "Yes. We can start with discovery, a focused build, or a specific problem and expand the engagement when the work calls for it.",
   },
+
+  {
+    question: "DO YOU WORK WITH STARTUPS AND GROWING BUSINESSES?",
+    answer:
+      "Yes. We work with people building what comes next — from early ideas and growing businesses to teams ready to rethink how they work.",
+  },
+
   {
     question: "DO YOU WORK ONGOINGLY?",
     answer:
       "Yes. Some teams need a focused build while others need a long-term technology and creative partner. We can work either way.",
+  },
+
+  {
+    question: "HOW DO WE GET STARTED?",
+    answer:
+      "Tell us what is stuck, what you are trying to build, or where you want to go next. We will figure out the right place to start.",
   },
 ];
