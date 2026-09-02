@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageSection } from "@/components/shared/page-section";
@@ -9,6 +10,13 @@ import {
   approachPrinciple,
   approachSteps,
 } from "@/lib/approach";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata = createPageMetadata(
+  "Approach",
+  "See how Hobblitt works with partners: listen, understand, assemble, build, and move with one clear direction.",
+  "/approach",
+);
 
 const accentColor = {
   blue: "text-[#22B8F0]",

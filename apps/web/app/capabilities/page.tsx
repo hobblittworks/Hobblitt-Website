@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageSection } from "@/components/shared/page-section";
 import { capabilitiesContent } from "@/lib/capabilities";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata = createPageMetadata(
+  "Capabilities",
+  "Explore Hobblitt's capabilities across technology, creative, and growth, and how they work together around the problem.",
+  "/capabilities",
+);
 
 export default function CapabilitiesPage() {
   const { hero, capabilities, together, cta } = capabilitiesContent;

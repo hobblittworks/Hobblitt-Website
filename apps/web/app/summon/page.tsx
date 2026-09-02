@@ -1,12 +1,33 @@
+import type { Metadata } from "next";
 import { PageSection } from "@/components/shared/page-section";
 import { SocialIcons } from "@/components/shared/social-icons";
 import { ContactForm } from "@/components/summon/contact-form";
 import { SummonHero } from "@/components/summon/summon-hero";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata = createPageMetadata(
+  "Start a Project",
+  "Tell Hobblitt what is stuck, what you're trying to build, or where you want to go next. Start the conversation.",
+  "/summon",
+);
 
 const nextSteps = [
-  { number: "01", title: "LISTEN", description: "We read what you send — every message, by a real person." },
-  { number: "02", title: "UNDERSTAND", description: "If it's a fit, we ask what we need to and figure out where to start." },
-  { number: "03", title: "REPLY", description: "You hear back with a real answer, not a form-letter." },
+  {
+    number: "01",
+    title: "LISTEN",
+    description: "We read what you send — every message, by a real person.",
+  },
+  {
+    number: "02",
+    title: "UNDERSTAND",
+    description:
+      "If it's a fit, we ask what we need to and figure out where to start.",
+  },
+  {
+    number: "03",
+    title: "REPLY",
+    description: "You hear back with a real answer, not a form-letter.",
+  },
 ];
 
 export default function SummonPage() {
@@ -22,7 +43,8 @@ export default function SummonPage() {
               02 / TELL US WHAT&apos;S STUCK
             </p>
             <p className="type-body mt-6 max-w-[280px] text-xs leading-6 text-[#64748B] lg:max-w-[200px]">
-              No fixed packages. We shape the engagement around what you actually need.
+              No fixed packages. We shape the engagement around what you
+              actually need.
             </p>
           </div>
 
@@ -56,8 +78,8 @@ export default function SummonPage() {
         </h2>
 
         <p className="type-body mt-8 max-w-[650px] text-base leading-8 text-[#94A3B8] md:text-lg">
-          We start with the problem, understand the business, and figure out what needs
-          to happen next — before deciding what to build.
+          We start with the problem, understand the business, and figure out
+          what needs to happen next — before deciding what to build.
         </p>
 
         <div className="mt-10 flex items-center gap-4">
@@ -70,9 +92,13 @@ export default function SummonPage() {
         <div className="mt-12 grid gap-px border border-[#E2E8F0]/10 bg-[#E2E8F0]/10 sm:grid-cols-3 md:mt-14">
           {nextSteps.map((step) => (
             <div key={step.number} className="bg-[#111827] px-6 py-6">
-              <span className="type-caption text-[9px] text-[#22B8F0]">{step.number}</span>
+              <span className="type-caption text-[9px] text-[#22B8F0]">
+                {step.number}
+              </span>
               <h3 className="type-h2 mt-4 text-lg">{step.title}</h3>
-              <p className="type-body mt-2 text-xs leading-5 text-[#64748B]">{step.description}</p>
+              <p className="type-body mt-2 text-xs leading-5 text-[#64748B]">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
