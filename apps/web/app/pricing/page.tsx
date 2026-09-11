@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -9,6 +10,14 @@ import {
   pricingFaqs,
   pricingPrinciples,
 } from "@/lib/pricing";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+
+export const metadata = createPageMetadata(
+  "Pricing",
+  "See how Hobblitt structures engagements around the work that matters, with flexible ways to work together and clear principles.",
+  "/pricing",
+);
 
 export default function PricingPage() {
   return (

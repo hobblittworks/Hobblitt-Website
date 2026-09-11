@@ -12,6 +12,7 @@ import { SummonHobblitt } from "@/components/home/summon-hobblitt";
 import { VideoExplainer } from "@/components/home/video-explainer";
 import { WhoIsHobblitt } from "@/components/home/who-is-hobblitt";
 import { WhyHobblitt } from "@/components/home/why-hobblitt";
+import { Testimonials } from "@/components/home/testimonials";
 
 export default function FrontPage() {
   const [activeCapability, setActiveCapability] =
@@ -35,6 +36,7 @@ export default function FrontPage() {
       <ProblemAssembly />
       <HowWeWork />
       <SelectedWork />
+      <Testimonials />
       <Community />
       <SummonHobblitt />
     </div>

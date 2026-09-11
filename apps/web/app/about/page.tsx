@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PageSection } from "@/components/shared/page-section";
 import { SpecList } from "@/components/shared/spec-list";
 import { SpecRow } from "@/components/shared/spec-row";
 import { aboutContent } from "@/lib/about";
+import { createPageMetadata } from "@/lib/site-metadata";
+
+export const metadata: Metadata = createPageMetadata(
+  "About",
+  "Learn who Hobblitt is, how we work with partners, what we bring to the table, and the kinds of businesses we help.",
+  "/about",
+);
 
 export default function AboutPage() {
   const {

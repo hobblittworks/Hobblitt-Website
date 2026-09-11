@@ -11,11 +11,11 @@ export const siteConfig = {
   description:
     "Hobblitt is a technology-first creative agency helping businesses build, automate, and grow.",
   url: "https://hobblitt.com",
-
   social: {
     linkedin: "https://www.linkedin.com/company/hobblitt",
     instagram: "https://www.instagram.com/hobblitt",
     x: "https://x.com/hobblitt",
+    youtube: "https://www.youtube.com/@hobblitt",
   },
 } as const;
 
