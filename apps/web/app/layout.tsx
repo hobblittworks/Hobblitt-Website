@@ -39,11 +39,20 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
     url: siteConfig.url,
+    images: [
+      {
+        url: "/og/hobblitt-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Hobblitt — A technology-first creative agency",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
+    images: ["/og/hobblitt-og.png"],
   },
 };
 
